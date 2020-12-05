@@ -292,7 +292,7 @@ func copyFile(srcFile, dstFile *File, opts Options) (err error) {
 		}
 	}
 
-	return setPermissions(dstFile, srcFile.fileInfoOnInit.Mode(), opts)
+	return SetPermissions(dstFile, srcFile.fileInfoOnInit.Mode(), opts)
 }
 
 // backupFile will create a backup of the file using the chosen control method.  See Options.Backup.
